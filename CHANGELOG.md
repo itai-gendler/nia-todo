@@ -13,9 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/de/spe
 ## [3.3.1] - 2026-10-08
 
 ### Added
-- ☁️ Added optional account-wide dashboard preference synchronization across web, PWA, and native clients, with local offline caching and realtime updates between active sessions.
-- 🗂️ Added an optional dashboard status grouping control; when disabled, Todos are grouped only by project while in-progress items are promoted without overriding the configured Todo sort order.
-- 🧭 Added a workspace selector to dashboard customization so multiple workspace configurations can be edited and saved in one session.
+- Added optional account-wide dashboard preference synchronization across web, PWA, and native clients, with local offline caching and realtime updates between active sessions.
+- Added an optional dashboard status grouping control; when disabled, Todos are grouped only by project while in-progress items are promoted without overriding the configured Todo sort order.
+- Added a workspace selector to dashboard customization so multiple workspace configurations can be edited and saved in one session.
 
 ### Changed
 - Stored the complete dashboard configuration independently per workspace and automatically loaded the matching preferences when switching workspaces.
@@ -28,17 +28,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/de/spe
 ## [3.3.0] - 2026-10-07
 
 ### Added
-- 🧭 Added a fully personalizable dashboard with independently configurable relevant groups, active projects, project widgets, compact density, four selectable metrics, and include/exclude project scopes stored locally per app installation.
-- 📊 Added clickable dashboard and project-widget metrics with contextual drilldowns, persistent applied-filter controls, empty-result explanations, and consistent return navigation.
-- ✨ Added focused dashboard calculations that keep the main metrics, relevant groups, active projects, project widgets, and Todo list on the same filtered dataset.
-- 📝 Added a line-based multi-Todo creation mode with per-row Quick Add parsing, shared project, section, and priority defaults, offline queue support, localized validation, and a 50-Todo batch limit.
-- 🆕 Added a localized 3.3.0 “What’s new” tour across all twelve supported languages.
+- Added a fully personalizable dashboard with independently configurable relevant groups, active projects, project widgets, compact density, four selectable metrics, and include/exclude project scopes stored locally per app installation.
+- Added clickable dashboard and project-widget metrics with contextual drilldowns, persistent applied-filter controls, empty-result explanations, and consistent return navigation.
+- Added focused dashboard calculations that keep the main metrics, relevant groups, active projects, project widgets, and Todo list on the same filtered dataset.
+- Added a line-based multi-Todo creation mode with per-row Quick Add parsing, shared project, section, and priority defaults, offline queue support, localized validation, and a 50-Todo batch limit.
+- Added a localized 3.3.0 “What’s new” tour across all twelve supported languages.
 
 ### Changed
-- 🌿 Renamed the top-bar focus and minimal controls to the clearer **Today** and **Calm** views, with matching calendar and leaf icons.
-- 🎛️ Made project widgets inherit the selected dashboard metrics, metric order, compact presentation, focus scope, hover feedback, and project-aware drilldown behavior.
-- 🧘 Refined Calm view to reduce secondary dashboard areas, completed Todos, and nonessential metadata without replacing the user’s selected metrics or stored dashboard preferences.
-- 📱 Improved dashboard responsiveness so relevant and project panels size to their actual content instead of reserving empty rows.
+- Renamed the top-bar focus and minimal controls to the clearer **Today** and **Calm** views, with matching calendar and leaf icons.
+- Made project widgets inherit the selected dashboard metrics, metric order, compact presentation, focus scope, hover feedback, and project-aware drilldown behavior.
+- Refined Calm view to reduce secondary dashboard areas, completed Todos, and nonessential metadata without replacing the user’s selected metrics or stored dashboard preferences.
+- Improved dashboard responsiveness so relevant and project panels size to their actual content instead of reserving empty rows.
 
 ### Fixed
 - Fixed applied dashboard filters disappearing when a drilldown returns no Todos.
