@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/de/spe
 ## [Unreleased]
 
 ### Added
-- 🔗 Added a localized Resources section to the About dialog with links to the documentation, API reference, GitHub repository, and issue form across web, PWA, and native clients.
+- Added a localized Resources section to the About dialog with links to the documentation, API reference, GitHub repository, and issue form across web, PWA, and native clients.
 
 ## [3.3.1] - 2026-10-08
 
