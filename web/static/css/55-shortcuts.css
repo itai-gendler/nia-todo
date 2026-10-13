@@ -1,0 +1,188 @@
+#shortcuts-modal.ui-detail-modal.ui-detail-view .shortcuts-modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+#shortcuts-modal .ui-detail-modal-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+#shortcuts-modal .shortcuts-shell {
+  height: 100%;
+  min-height: 0;
+}
+
+.shortcuts-section {
+  min-width: 0;
+}
+
+.shortcuts-list {
+  min-height: 0;
+}
+
+.shortcuts-row {
+  min-width: 0;
+  border: 0;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--bg-tertiary) 68%, var(--bg-primary));
+  box-shadow: none;
+}
+
+.shortcuts-label {
+  min-width: 0;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.shortcuts-keys {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  order: -1;
+  width: fit-content;
+  min-width: 72px;
+  max-width: 100%;
+  min-height: 40px;
+  align-self: center;
+  padding: 7px 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: color-mix(in srgb, var(--accent) 72%, var(--text-primary));
+  background: color-mix(in srgb, var(--accent) 16%, var(--bg-primary));
+}
+
+[data-theme="light"] .shortcuts-keys {
+  color: color-mix(in srgb, var(--accent) 78%, var(--text-primary));
+  background: color-mix(in srgb, var(--accent) 24%, var(--bg-primary));
+}
+
+.shortcuts-key-alternative {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.shortcuts-keys kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  box-shadow: none;
+  font: 700 13px/1.2 var(--font-family, inherit);
+}
+
+@media (min-width: 901px) {
+  #shortcuts-modal .shortcuts-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  #shortcuts-modal .shortcuts-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  #shortcuts-modal .shortcuts-section:first-child {
+    grid-column: 1 / -1;
+  }
+
+  #shortcuts-modal .shortcuts-list {
+    flex: 1 1 auto;
+    display: grid;
+    gap: 10px;
+  }
+
+  #shortcuts-modal .shortcuts-section:first-child .shortcuts-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  #shortcuts-modal .shortcuts-section:nth-child(2) .shortcuts-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  #shortcuts-modal .shortcuts-section:nth-child(3) .shortcuts-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .shortcuts-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .shortcuts-keys {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 900px) {
+  #shortcuts-modal .shortcuts-shell {
+    height: auto;
+  }
+
+  #shortcuts-modal .shortcuts-section + .shortcuts-section {
+    margin-top: 24px;
+  }
+
+  .shortcuts-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .shortcuts-row {
+    min-height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .shortcuts-keys {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .shortcuts-row {
+    min-height: 128px;
+    padding: 12px;
+  }
+
+  .shortcuts-label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  html:not(.native-app) .shortcut-help-menu-item,
+  html.native-android .shortcut-help-menu-item {
+    display: none;
+  }
+}
