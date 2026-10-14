@@ -12,7 +12,7 @@
       "entities": [
         {
           "entity": "todo",
-          "as": "todo",
+          "as": "completed-todo",
           "effect": "reads",
           "facts": [
             "Title",
@@ -34,7 +34,7 @@
       "entities": [
         {
           "entity": "todo",
-          "as": "todo",
+          "as": "completed-todo",
           "effect": "changes",
           "from": "Open",
           "to": "Done",

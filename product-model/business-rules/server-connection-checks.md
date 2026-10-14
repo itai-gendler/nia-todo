@@ -34,4 +34,4 @@
 
 # Apps connect only to a verified nia-todo server over HTTPS
 
-An app saves a server only after it answers as nia-todo; the address must use HTTPS except on the local machine or network, and must not carry credentials. An app older than the server's minimum app version is asked to update.
+An app saves a server only after it answers as nia-todo; the address must use HTTPS unless the server is on the same machine (localhost), and must not carry credentials. An app older than the server's minimum app version is asked to update.

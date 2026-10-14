@@ -12,7 +12,7 @@
       "entities": [
         {
           "entity": "password-link",
-          "as": "password-link",
+          "as": "expired-link",
           "effect": "reads",
           "facts": [
             "Purpose",

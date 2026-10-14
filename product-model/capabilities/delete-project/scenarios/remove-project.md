@@ -12,7 +12,7 @@
       "entities": [
         {
           "entity": "project",
-          "as": "project",
+          "as": "deleted-project",
           "effect": "reads",
           "facts": [
             "Name"
@@ -40,19 +40,19 @@
         },
         {
           "entity": "project",
-          "as": "project",
+          "as": "deleted-project",
           "effect": "removes"
         },
         {
           "entity": "project",
           "as": "subproject",
           "effect": "removes",
-          "with": "project"
+          "with": "deleted-project"
         },
         {
           "entity": "section",
           "effect": "removes",
-          "with": "project"
+          "with": "deleted-project"
         }
       ],
       "contexts": {

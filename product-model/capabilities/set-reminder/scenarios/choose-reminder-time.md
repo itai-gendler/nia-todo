@@ -20,7 +20,7 @@
         },
         {
           "entity": "reminder",
-          "as": "reminder",
+          "as": "new-reminder",
           "effect": "creates",
           "facts": [
             "Remind at"
@@ -47,7 +47,7 @@
         },
         {
           "entity": "reminder",
-          "as": "reminder",
+          "as": "new-reminder",
           "effect": "creates",
           "to": "Scheduled",
           "facts": [

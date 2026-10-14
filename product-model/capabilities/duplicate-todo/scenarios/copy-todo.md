@@ -12,7 +12,7 @@
       "entities": [
         {
           "entity": "todo",
-          "as": "todo",
+          "as": "original-todo",
           "effect": "reads",
           "facts": [
             "Title",

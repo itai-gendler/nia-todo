@@ -73,5 +73,5 @@ The app talks to that server from now on, even when it starts offline.
 
 ## Edge cases
 
-- A plain-HTTP address is accepted only for a server on the local machine or network.
+- A plain-HTTP address is accepted only for a server on the same machine (localhost).
 - When the server requires a newer app than the one installed, the app asks the person to update it.

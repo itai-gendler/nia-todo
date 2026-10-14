@@ -21,7 +21,7 @@
         },
         {
           "entity": "password-link",
-          "as": "password-link",
+          "as": "new-link",
           "effect": "reads",
           "facts": []
         }
@@ -70,7 +70,7 @@
       "entities": [
         {
           "entity": "password-link",
-          "as": "password-link",
+          "as": "new-link",
           "effect": "reads",
           "facts": []
         }

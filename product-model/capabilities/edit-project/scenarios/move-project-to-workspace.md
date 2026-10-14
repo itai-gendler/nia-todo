@@ -12,7 +12,7 @@
       "entities": [
         {
           "entity": "project",
-          "as": "project",
+          "as": "moved-project",
           "effect": "changes",
           "facts": [
             "Workspace",
@@ -38,7 +38,7 @@
       "entities": [
         {
           "entity": "project",
-          "as": "project",
+          "as": "moved-project",
           "effect": "changes",
           "facts": [
             "Workspace"
